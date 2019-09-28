@@ -12,11 +12,11 @@ celsius_q    = np.array([-40, -10,  0,  8, 15, 22,  38, 40, 55, 63, 70],  dtype=
 fahrenheit_a = np.array([-40,  14, 32, 46.4, 59, 71.6, 100.4, 104, 131, 145.4, 158],  dtype=float)
 
 l0=tf.keras.layers.Dense(units=1, input_shape=[1])
-l1=tf.keras.layers.Dense(units=1)
-l2=tf.keras.layers.Dense(units=1)
+#l1=tf.keras.layers.Dense(units=1)
+#l2=tf.keras.layers.Dense(units=1)
 
 model=tf.keras.Sequential([
-    l0,l1,l2
+    l0,
 ])
 model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.9))
 
